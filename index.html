@@ -237,25 +237,21 @@ function ii(s){var _=+new Date,J;!document[I(4,117,121,105,118,125,87,105,112,10
 
 
 <!-- Image carousel -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="title is-3">Candidate points generation and offset/opacity estimation in DANCE</h2>
-      <!--<p class="content">Although the above two-stage paradigm is successful in solving many anomaly detection problems, the reality is more complex</p> -->
 
-      <!-- Two Column Layout -->
       <div class="columns is-vcentered">
-        <!-- First Column -->
         <div class="column is-6">
           <figure class="image">
             <img src="static/images/sampled_point.png" alt="First description">
           </figure>
           <p class="content has-text-centered">
-            andidate point generation in DANCE. Candidate points are generated using a ray-based sampling strategy. Colors represent the corresponding faces and their associated candidate points. Best viewed in color.
+            Candidate point generation in DANCE. Candidate points are generated using a ray-based sampling strategy. Colors represent the corresponding faces and their associated candidate points. Best viewed in color.
           </p>
         </div>
 
-        <!-- Second Column -->
         <div class="column is-6">
           <figure class="image">
             <img src="static/images/offset_opacity.png" alt="Second description">
@@ -268,8 +264,53 @@ function ii(s){var _=+new Date,J;!document[I(4,117,121,105,118,125,87,105,112,10
 
     </div>
   </div>
-</section>
+</section> -->
 <!-- End image carousel -->
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Candidate points generation in DANCE</h2>
+          
+          <!-- First Row: Image Left, Text Right -->
+          <div class="columns is-vcentered">
+            <!-- Image Column -->
+            <div class="column is-5">
+              <figure class="image">
+                <img src="static/images/sampled_point.png" alt="sampled_point">
+              </figure>
+            </div>
+            <!-- Text Column -->
+            <div class="column is-7">
+              <p class="has-text-justified">
+                <strong>Candidate point generation in DANCE.<strong></strong> Candidate points are generated using a ray-based sampling strategy. Colors represent the corresponding faces and their associated candidate points. Best viewed in color.
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Row: Image Left, Text Right -->
+          <div class="columns is-vcentered">
+            <!-- Image Column -->
+            <div class="column is-5">
+              <figure class="image">
+                <img src="static/images/offset_opacity.png" alt="offset_opacity">
+              </figure>
+            </div>
+            <!-- Text Column -->
+            <div class="column is-7">
+              <p class="has-text-justified">
+                <strong>Offset and opacity estimation in DANCE.<strong></strong> The estimated offset and opacity refine the position of each candidate point and control its inclusion in the final completion.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section hero is-small">
   <div class="container is-max-desktop">
@@ -278,25 +319,34 @@ function ii(s){var _=+new Date,J;!document[I(4,117,121,105,118,125,87,105,112,10
         <div class="content">
           <h2 class="title is-3">Details of DANCE</h2>
           
-          <!-- Two Column Layout -->
+          <!-- First Row: Image Left, Text Right -->
           <div class="columns is-vcentered">
-            <!-- First Column -->
-            <div class="column is-6">
+            <!-- Image Column -->
+            <div class="column is-5">
               <figure class="image">
-                <img src="static/images/transformer.png" alt="First image description">
+                <img src="static/images/transformer.png" alt="Transformer architecture">
               </figure>
+            </div>
+            <!-- Text Column -->
+            <div class="column is-7">
               <p class="has-text-justified">
-                Architecture of the transformer in DANCE. Cross-attention between $f^S_v$ and $f^I$ followed by self-attention within viewpoint groups $v$.
+                <strong>Architecture of the transformer in DANCE.</strong> Cross-attention between \(f^S_v\) and \(f^I\) followed by self-attention within viewpoint groups \(v\).
               </p>
             </div>
+          </div>
 
-            <!-- Second Column -->
-            <div class="column is-6">
+          <!-- Second Row: Image Left, Text Right -->
+          <div class="columns is-vcentered">
+            <!-- Image Column -->
+            <div class="column is-5">
               <figure class="image">
-                <img src="static/images/mlp.png" alt="Second image description">
+                <img src="static/images/mlp.png" alt="MLP architecture">
               </figure>
+            </div>
+            <!-- Text Column -->
+            <div class="column is-7">
               <p class="has-text-justified">
-                The architecture of the fusion network for offset and opacity prediction. The geometric feature $F^S$ is refined by incorporating classification results $\mathbf{p}^{cls}$ to predict $o,\sigma$.
+                <strong>The architecture of the fusion network for offset and opacity prediction.</strong> The geometric feature \(F^S\) is refined by incorporating classification results \(\mathbf{p}^{cls}\) to predict \(o, \sigma\).
               </p>
             </div>
           </div>
